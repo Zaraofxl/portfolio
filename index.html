@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepan A | Full Stack Developer & Software Engineer</title>
+  <meta name="description" content="Portfolio of Deepan A - Full Stack Developer specializing in Go (Gin), Python, React, Angular, MongoDB, Redis, and MySQL. Best Paper Award winner (NCACI-26).">
+  <meta name="keywords" content="Deepan A, Full Stack Developer, Software Engineer, React, Go, Gin, Redis, Python, Angular, MongoDB, MySQL, Chennai, Portfolio">
+  <meta name="author" content="Deepan A">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Deepan A | Full Stack Developer Portfolio">
+  <meta property="og:description" content="Computer Science Engineering student and Best Paper Award winner with hands-on full-stack experience in React, Angular, Python, Go (Gin), Redis, and MongoDB.">
+  <meta property="og:image" content="assets/images/deepan.png">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%2306b6d4'/><text x='50' y='65' font-family='sans-serif' font-size='48' font-weight='bold' fill='%23ffffff' text-anchor='middle'>DA</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Cursor Glow -->
+  <div id="cursor-glow"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">
+        <div class="brand-icon">
+          <i class="fas fa-terminal"></i>
+        </div>
+        <span>Deepan<span style="color:var(--accent-cyan)">.dev</span></span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#terminal">Terminal</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Awards</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="assets/Deepan_A_Resume.pdf" download="Deepan_A_Resume.pdf" class="btn btn-outline btn-sm" id="nav-resume-btn">
+          <i class="fas fa-file-arrow-down"></i> Resume
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <canvas id="hero-canvas"></canvas>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge-status">
+          <span class="status-dot"></span>
+          <span>Available for Roles & Internships</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Deepan A</span>
+        </h1>
+
+        <div class="hero-typed-wrapper">
+          <span style="color:var(--text-muted);font-weight:400;">Specializing in:</span>
+          <span id="typed-text" class="gradient-text"></span>
+          <span class="typed-cursor"></span>
+        </div>
+
+        <p class="hero-description">
+          Computer Science Engineering student & Best Paper Award winner with hands-on full-stack mastery in <strong>React, Angular, Python, Go (Gin), Redis, and MongoDB</strong>. Proven ability to design and ship secure, real-time, high-performance web applications from database schema to deployed live demo.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-laptop-code"></i> Explore Projects
+          </a>
+          <a href="assets/Deepan_A_Resume.pdf" download="Deepan_A_Resume.pdf" class="btn btn-secondary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-paper-plane"></i> Get in Touch
+          </a>
+        </div>
+
+        <div class="hero-social-links">
+          <span>Connect:</span>
+          <a href="https://github.com/Zaraofxl" target="_blank" rel="noopener noreferrer" class="social-circle" title="GitHub" aria-label="GitHub Profile">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/deepan1205" target="_blank" rel="noopener noreferrer" class="social-circle" title="LinkedIn" aria-label="LinkedIn Profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:deepanrao@aecsalem.edu.in" class="social-circle" title="Email" aria-label="Send Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+916369297998" class="social-circle" title="Phone" aria-label="Call Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual-card">
+        <div class="avatar-wrapper">
+          <div class="avatar-inner">
+            <img src="assets/images/deepan.png" alt="Deepan A - Full Stack Developer" class="avatar-image">
+          </div>
+        </div>
+
+        <!-- Floating Info Badges -->
+        <div class="floating-badge badge-1">
+          <i class="fas fa-trophy" style="color:#f59e0b"></i>
+          <div class="badge-text">
+            <span class="badge-title">Best Paper Award</span>
+            <span class="badge-sub">NCACI-26 Conference</span>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-2">
+          <i class="fas fa-bolt" style="color:var(--accent-cyan)"></i>
+          <div class="badge-text">
+            <span class="badge-title">Real-Time Go & Redis</span>
+            <span class="badge-sub">Sub-millisecond latency</span>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-3">
+          <i class="fas fa-graduation-cap" style="color:var(--accent-emerald)"></i>
+          <div class="badge-text">
+            <span class="badge-title">CSE 2023–2027</span>
+            <span class="badge-sub">CGPA: 7.6 / 10.0</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Continuous Tech Stack Marquee -->
+  <div class="tech-marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item"><i class="fab fa-golang"></i> Go (Gin)</div>
+      <div class="marquee-item"><i class="fab fa-react"></i> React.js</div>
+      <div class="marquee-item"><i class="fab fa-python"></i> Python</div>
+      <div class="marquee-item"><i class="fas fa-bolt"></i> Redis In-Memory</div>
+      <div class="marquee-item"><i class="fas fa-database"></i> MongoDB</div>
+      <div class="marquee-item"><i class="fas fa-table"></i> MySQL / SQL</div>
+      <div class="marquee-item"><i class="fab fa-angular"></i> Angular</div>
+      <div class="marquee-item"><i class="fab fa-node-js"></i> Node.js</div>
+      <div class="marquee-item"><i class="fas fa-network-wired"></i> RESTful APIs</div>
+      <div class="marquee-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+      <div class="marquee-item"><i class="fas fa-cloud"></i> Render Cloud</div>
+      <div class="marquee-item"><i class="fab fa-js"></i> JavaScript (ES6+)</div>
+      <!-- Loop duplicate for seamless continuous scroll -->
+      <div class="marquee-item"><i class="fab fa-golang"></i> Go (Gin)</div>
+      <div class="marquee-item"><i class="fab fa-react"></i> React.js</div>
+      <div class="marquee-item"><i class="fab fa-python"></i> Python</div>
+      <div class="marquee-item"><i class="fas fa-bolt"></i> Redis In-Memory</div>
+      <div class="marquee-item"><i class="fas fa-database"></i> MongoDB</div>
+      <div class="marquee-item"><i class="fas fa-table"></i> MySQL / SQL</div>
+      <div class="marquee-item"><i class="fab fa-angular"></i> Angular</div>
+      <div class="marquee-item"><i class="fab fa-node-js"></i> Node.js</div>
+      <div class="marquee-item"><i class="fas fa-network-wired"></i> RESTful APIs</div>
+      <div class="marquee-item"><i class="fab fa-git-alt"></i> Git & GitHub</div>
+      <div class="marquee-item"><i class="fas fa-cloud"></i> Render Cloud</div>
+      <div class="marquee-item"><i class="fab fa-js"></i> JavaScript (ES6+)</div>
+    </div>
+  </div>
+
+  <!-- Interactive Terminal Section -->
+  <section class="section terminal-section" id="terminal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-terminal"></i> Interactive Sandbox</span>
+        <h2>Developer <span class="gradient-text">Command Center</span></h2>
+        <p>Explore my background, inspect tech stacks, or trigger system actions right from the interactive CLI.</p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-controls">
+            <span class="terminal-btn btn-close"></span>
+            <span class="terminal-btn btn-minimize"></span>
+            <span class="terminal-btn btn-maximize"></span>
+          </div>
+          <div class="terminal-title">
+            <i class="fas fa-cube"></i> bash — deepan@portfolio: ~ (zsh)
+          </div>
+          <span class="terminal-badge">LIVE REPL</span>
+        </div>
+
+        <div class="terminal-body">
+          <div class="terminal-welcome">
+            <p>Welcome to <strong>Deepan's Interactive Shell v2.6.0</strong></p>
+            <p>Type <span style="color:var(--accent-cyan)">'help'</span> to view commands, or click any shortcut chip below.</p>
+          </div>
+
+          <div class="terminal-history" id="terminal-history">
+            <!-- Initial line -->
+            <div class="terminal-line">
+              <div><span class="cmd-prompt">deepan@dev:~$</span> <span class="cmd-text">whoami</span></div>
+              <div class="cmd-response">
+                <span style="color:#38bdf8;font-weight:700">Deepan A</span> — Full-Stack Software Engineer & AI Researcher based in Chennai. Hands-on builder of real-time polling engines, enterprise workflows, and distributed systems.
+              </div>
+            </div>
+          </div>
+
+          <div class="terminal-input-row">
+            <span class="cmd-prompt">deepan@dev:~$</span>
+            <input type="text" id="terminal-cli-input" class="terminal-input" placeholder="type 'skills', 'projects', 'awards', or 'help'..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+
+        <div class="terminal-quick-btns">
+          <span class="quick-label">Quick actions:</span>
+          <button class="terminal-chip" data-cmd="help">help</button>
+          <button class="terminal-chip" data-cmd="skills">skills</button>
+          <button class="terminal-chip" data-cmd="projects">projects</button>
+          <button class="terminal-chip" data-cmd="awards">awards</button>
+          <button class="terminal-chip" data-cmd="education">education</button>
+          <button class="terminal-chip" data-cmd="contact">contact</button>
+          <button class="terminal-chip" data-cmd="resume">resume</button>
+          <button class="terminal-chip" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-user-astronaut"></i> Biography</span>
+        <h2>Engineering <span class="gradient-text">Mindset & Background</span></h2>
+        <p>Combining rigorous computer science fundamentals with modern real-time full-stack development.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Architecting Systems from <span class="gradient-text">Database Schema to Live Demo</span></h3>
+          <p>
+            I am a Computer Science Engineering student at <strong>Annapoorana Engineering College</strong> (Class of 2027) with hands-on experience building production-ready web applications. My passion lies in solving real-time concurrency challenges, crafting responsive user interfaces, and designing clean APIs.
+          </p>
+          <p>
+            During my research work on <em>"Self-Healing Network Using AI"</em>, I won the <strong>Best Paper Award</strong> at the 2nd National Conference on Advances in Computational Intelligence (NCACI-26). I take pride in writing clean, documented code and delivering end-to-end solutions that scale effortlessly.
+          </p>
+
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Core Tech Stacks (Go, Python, JS)</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">2+</div>
+              <div class="stat-label">Full-Stack Production Systems</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">1st</div>
+              <div class="stat-label">National Conference Best Paper</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">7.6</div>
+              <div class="stat-label">Academic CGPA (B.E. CSE)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-cards-col">
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <div class="pillar-content">
+              <h4>End-to-End Architecture</h4>
+              <p>Bridging responsive SPAs in React & Angular with resilient backends in Go (Gin) and Python REST frameworks.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-gauge-high"></i>
+            </div>
+            <div class="pillar-content">
+              <h4>High Throughput & In-Memory Caching</h4>
+              <p>Harnessing Redis for ultra-low latency vote counts and Go's concurrency primitives for high-volume transactions.</p>
+            </div>
+          </div>
+
+          <div class="pillar-card">
+            <div class="pillar-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <div class="pillar-content">
+              <h4>AI & Telemetry Innovation</h4>
+              <p>Award-winning research on autonomous network healing algorithms to minimize downtime in distributed nodes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix Section -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-sliders"></i> Competencies</span>
+        <h2>Technical <span class="gradient-text">Skills & Toolbelt</span></h2>
+        <p>A categorized breakdown of technologies I use to build scalable products.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="skills-filter-nav">
+        <button class="filter-btn active" data-filter="all">All Tech</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="backend">Backend & APIs</button>
+        <button class="filter-btn" data-filter="database">Databases & Cache</button>
+        <button class="filter-btn" data-filter="devops">DevOps & Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Go (Gin) -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#00add8;">
+              <i class="fab fa-golang"></i>
+            </div>
+            <span class="skill-level-tag">Backend</span>
+          </div>
+          <h3 class="skill-title">Go & Gin Framework</h3>
+          <p class="skill-desc">High-throughput RESTful microservices, lightweight routing, goroutine concurrency, and low memory footprint.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 88%;"></div>
+          </div>
+        </div>
+
+        <!-- React.js -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#61dafb;">
+              <i class="fab fa-react"></i>
+            </div>
+            <span class="skill-level-tag">Frontend</span>
+          </div>
+          <h3 class="skill-title">React.js</h3>
+          <p class="skill-desc">Component hierarchy, custom hooks, state management, SPA routing, virtual DOM optimization, and dynamic UI renders.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#3776ab;">
+              <i class="fab fa-python"></i>
+            </div>
+            <span class="skill-level-tag">Backend / AI</span>
+          </div>
+          <h3 class="skill-title">Python</h3>
+          <p class="skill-desc">REST API development, data structures, machine learning pipelines for network telemetry, and automated scripts.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 86%;"></div>
+          </div>
+        </div>
+
+        <!-- Redis -->
+        <div class="skill-card" data-category="database">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#dc382d;">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <span class="skill-level-tag">In-Memory</span>
+          </div>
+          <h3 class="skill-title">Redis</h3>
+          <p class="skill-desc">Sub-millisecond data caching, live atomic counters for real-time polling, pub/sub channels, and session management.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 84%;"></div>
+          </div>
+        </div>
+
+        <!-- MongoDB -->
+        <div class="skill-card" data-category="database">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#47a248;">
+              <i class="fas fa-database"></i>
+            </div>
+            <span class="skill-level-tag">NoSQL</span>
+          </div>
+          <h3 class="skill-title">MongoDB</h3>
+          <p class="skill-desc">Document-oriented schema design, indexing, aggregation pipelines, and JSON document modeling for scalable reads.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <!-- MySQL & SQL -->
+        <div class="skill-card" data-category="database">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#00758f;">
+              <i class="fas fa-table"></i>
+            </div>
+            <span class="skill-level-tag">Relational</span>
+          </div>
+          <h3 class="skill-title">MySQL & SQL</h3>
+          <p class="skill-desc">Relational schema design, normalization, foreign key constraints, ACID compliance, and role-based access schemas.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 88%;"></div>
+          </div>
+        </div>
+
+        <!-- Angular -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#dd0031;">
+              <i class="fab fa-angular"></i>
+            </div>
+            <span class="skill-level-tag">Frontend</span>
+          </div>
+          <h3 class="skill-title">Angular</h3>
+          <p class="skill-desc">Enterprise SPA engineering, TypeScript typing, modular services, reactive forms, and role-based dashboard views.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 82%;"></div>
+          </div>
+        </div>
+
+        <!-- RESTful APIs & Node.js -->
+        <div class="skill-card" data-category="backend">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#68a063;">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <span class="skill-level-tag">Backend</span>
+          </div>
+          <h3 class="skill-title">RESTful APIs & Node.js</h3>
+          <p class="skill-desc">Designing standardized HTTP REST interfaces, JSON payloads, status code handling, CORS, and token authentication.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 85%;"></div>
+          </div>
+        </div>
+
+        <!-- Git, GitHub & Render -->
+        <div class="skill-card" data-category="devops">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#f05032;">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <span class="skill-level-tag">DevOps & Tools</span>
+          </div>
+          <h3 class="skill-title">Git, GitHub & Render</h3>
+          <p class="skill-desc">Branching workflows, version control, CI/CD pipeline deployments to Render cloud platform, VS Code debugging.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 90%;"></div>
+          </div>
+        </div>
+
+        <!-- HTML5, CSS3 & JavaScript -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-head">
+            <div class="skill-icon-wrap" style="color:#f7df1e;">
+              <i class="fab fa-js"></i>
+            </div>
+            <span class="skill-level-tag">Web Core</span>
+          </div>
+          <h3 class="skill-title">Modern JavaScript (ES6+)</h3>
+          <p class="skill-desc">Async/await, Promises, Fetch API, DOM manipulation, responsive layouts, semantic HTML5, and CSS animations.</p>
+          <div class="skill-bar-outer">
+            <div class="skill-bar-inner" style="width: 92%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-code-branch"></i> Portfolio Work</span>
+        <h2>Featured <span class="gradient-text">Engineering Projects</span></h2>
+        <p>Real-world applications engineered for scale, responsiveness, and clean architecture.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Pulse Polling -->
+        <div class="project-card">
+          <div class="project-header-banner project-1-banner">
+            <div class="banner-overlay-pattern"></div>
+            <i class="fas fa-chart-pie project-banner-icon"></i>
+            <span class="project-status-badge status-live">
+              <i class="fas fa-circle-dot"></i> Live on Render
+            </span>
+          </div>
+          <div class="project-content">
+            <div class="project-date">Sep 2026 – Sep 2026</div>
+            <h3 class="project-title">Pulse Polling – Real-Time Polling Platform</h3>
+            <p class="project-desc">
+              A high-performance full-stack voting platform featuring a React frontend and Go (Gin) REST API. Integrated Redis for real-time vote updates and instantaneous vote tallies without page reloads, paired with MongoDB for resilient poll configurations.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Go (Gin)</span>
+              <span class="tech-tag">Redis</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Render</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://pulsepoll-zara-frontend.onrender.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <button class="btn btn-secondary btn-sm" data-modal-target="pulse-polling">
+                <i class="fas fa-circle-info"></i> Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Employee Leave Management System -->
+        <div class="project-card">
+          <div class="project-header-banner project-2-banner">
+            <div class="banner-overlay-pattern"></div>
+            <i class="fas fa-calendar-check project-banner-icon"></i>
+            <span class="project-status-badge status-enterprise">
+              <i class="fas fa-shield-halved"></i> Enterprise RBAC
+            </span>
+          </div>
+          <div class="project-content">
+            <div class="project-date">Mar 2026 – Apr 2026</div>
+            <h3 class="project-title">Employee Leave Management System</h3>
+            <p class="project-desc">
+              A full-stack workflow automation web application built with Angular, Python, and MySQL. Features secure REST APIs, role-based access control (RBAC), manager approval queues, and real-time leave balance audit tracking.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Angular</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">RBAC</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" data-modal-target="leave-management">
+                <i class="fas fa-circle-info"></i> Architecture & Workflow
+              </button>
+              <a href="https://github.com/Zaraofxl" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: AI Self-Healing Network -->
+        <div class="project-card">
+          <div class="project-header-banner project-3-banner">
+            <div class="banner-overlay-pattern"></div>
+            <i class="fas fa-network-wired project-banner-icon"></i>
+            <span class="project-status-badge status-award">
+              <i class="fas fa-award"></i> Best Paper Award
+            </span>
+          </div>
+          <div class="project-content">
+            <div class="project-date">NCACI-26 Conference</div>
+            <h3 class="project-title">Self-Healing Network Using AI</h3>
+            <p class="project-desc">
+              An intelligent network fault diagnosis and autonomous healing platform utilizing machine learning models to detect packet anomalies and automatically execute failover routing, winning the Best Paper Award at NCACI-26.
+            </p>
+            <div class="project-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Machine Learning</span>
+              <span class="tech-tag">Telemetry</span>
+              <span class="tech-tag">AI Algorithms</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn btn-primary btn-sm" data-modal-target="ai-network">
+                <i class="fas fa-circle-info"></i> Research Summary
+              </button>
+              <a href="#contact" class="btn btn-secondary btn-sm">
+                <i class="fas fa-envelope"></i> Discuss Research
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Timeline -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-graduation-cap"></i> Journey</span>
+        <h2>Experience & <span class="gradient-text">Academic Timeline</span></h2>
+        <p>Milestones that shaped my technical depth and problem-solving abilities.</p>
+      </div>
+
+      <div class="timeline-wrap">
+        <!-- Item 1: College -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">2023 – 2027</span>
+            <h3 class="timeline-role">Bachelor of Engineering — Computer Science</h3>
+            <div class="timeline-org">Annapoorana Engineering College</div>
+            <p>Pursuing rigorous computer science degree covering data structures, algorithms, operating systems, database management systems, and computer networks. Maintaining a cumulative <strong>CGPA of 7.6 / 10.0</strong>.</p>
+          </div>
+        </div>
+
+        <!-- Item 2: Internship -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">2026 (1 Month)</span>
+            <h3 class="timeline-role">Web Development Intern</h3>
+            <div class="timeline-org">PUMO Tecno Vision, Chennai</div>
+            <p>Built responsive, structured web interfaces using HTML5, CSS3, and JavaScript. Applied software engineering concepts to industry client tasks under professional guidance; earned full internship certification upon completion.</p>
+          </div>
+        </div>
+
+        <!-- Item 3: NCACI-26 Paper -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">NCACI-26 Conference</span>
+            <h3 class="timeline-role">Best Paper Award Winner</h3>
+            <div class="timeline-org">2nd National Conference on Advances in Computational Intelligence</div>
+            <p>Authored and presented the research paper <em>"Self-Healing Network Using AI"</em>, competing against numerous national participants and securing top honors for innovation in autonomic computer networking.</p>
+          </div>
+        </div>
+
+        <!-- Item 4: Full Stack Shipping -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-period">Sep 2026</span>
+            <h3 class="timeline-role">Deployed Pulse Polling Platform</h3>
+            <div class="timeline-org">Production Live on Render</div>
+            <p>Architected full-stack polling system combining React and Go (Gin) REST microservices with Redis in-memory real-time lookups and MongoDB storage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications & Achievements -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-medal"></i> Recognition</span>
+        <h2>Honors & <span class="gradient-text">Certifications</span></h2>
+        <p>Verified achievements demonstrating commitment to continuous learning.</p>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card">
+          <div class="cert-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="cert-info">
+            <h4>Best Paper Award — NCACI-26</h4>
+            <div class="cert-issuer">2nd National Conference on Computational Intelligence</div>
+            <p>Recognized for groundbreaking research paper "Self-Healing Network Using AI", showcasing machine learning applications in network fault mitigation.</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="cert-info">
+            <h4>Web Development Internship Certificate</h4>
+            <div class="cert-issuer">PUMO Tecno Vision, Chennai</div>
+            <p>Successfully completed professional hands-on industry internship in front-end development, responsive UI architecture, and web standards.</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <div class="cert-info">
+            <h4>The Complete Web Development Bootcamp</h4>
+            <div class="cert-issuer">Online Certified Program</div>
+            <p>Comprehensive mastery of full-stack web technologies including JavaScript ES6+, backend REST APIs, databases, authentication, and deployment.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge"><i class="fas fa-comments"></i> Let's Connect</span>
+        <h2>Get in <span class="gradient-text">Touch</span></h2>
+        <p>Have an internship opportunity, full-stack opening, or collaborative project? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Channels -->
+        <div class="contact-info-col">
+          <h3>Let's build something <span class="gradient-text">extraordinary</span></h3>
+          <p>
+            Whether you want to discuss a software engineering role, explore my projects, or just talk tech, feel free to reach out via any channel below.
+          </p>
+
+          <div class="contact-channels">
+            <!-- Email -->
+            <div class="channel-card">
+              <div class="channel-left">
+                <div class="channel-icon"><i class="fas fa-envelope"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">Email</span>
+                  <a href="mailto:deepanrao@aecsalem.edu.in" class="channel-val">deepanrao@aecsalem.edu.in</a>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="deepanrao@aecsalem.edu.in" title="Copy email">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="channel-card">
+              <div class="channel-left">
+                <div class="channel-icon"><i class="fas fa-phone"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">Phone / WhatsApp</span>
+                  <a href="tel:+916369297998" class="channel-val">+91 6369297998</a>
+                </div>
+              </div>
+              <button class="copy-btn" data-copy="+916369297998" title="Copy phone number">
+                <i class="far fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="channel-card">
+              <div class="channel-left">
+                <div class="channel-icon"><i class="fab fa-linkedin-in"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/deepan1205" target="_blank" rel="noopener noreferrer" class="channel-val">linkedin.com/in/deepan1205</a>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/deepan1205" target="_blank" rel="noopener noreferrer" class="copy-btn">
+                <i class="fas fa-arrow-up-right-from-square"></i> Visit
+              </a>
+            </div>
+
+            <!-- GitHub -->
+            <div class="channel-card">
+              <div class="channel-left">
+                <div class="channel-icon"><i class="fab fa-github"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">GitHub</span>
+                  <a href="https://github.com/Zaraofxl" target="_blank" rel="noopener noreferrer" class="channel-val">github.com/Zaraofxl</a>
+                </div>
+              </div>
+              <a href="https://github.com/Zaraofxl" target="_blank" rel="noopener noreferrer" class="copy-btn">
+                <i class="fas fa-arrow-up-right-from-square"></i> Visit
+              </a>
+            </div>
+
+            <!-- Location -->
+            <div class="channel-card">
+              <div class="channel-left">
+                <div class="channel-icon"><i class="fas fa-location-dot"></i></div>
+                <div class="channel-details">
+                  <span class="channel-label">Location</span>
+                  <span class="channel-val">Chennai, Tamil Nadu, India</span>
+                </div>
+              </div>
+              <span style="font-size:0.8rem;color:var(--text-subtle);">IST (UTC+5:30)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" name="name" class="form-control" placeholder="e.g. Alex Smith" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Your Email Address</label>
+              <input type="email" id="contact-email" name="email" class="form-control" placeholder="alex@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" name="subject" class="form-control" placeholder="Job Opportunity / Project Collaboration" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" name="message" class="form-control" placeholder="Hi Deepan, I came across your portfolio and would like to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width:100%;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+
+            <div id="form-feedback" class="form-feedback"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details Modal Popup -->
+  <div class="modal-overlay" id="project-modal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modal-title">Project Details</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notice Element -->
+  <div id="toast-notice" class="toast-notice"></div>
+
+  <!-- Floating Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Deepan A</h4>
+          <p>Full Stack Software Engineer & Real-Time Web Specialist</p>
+        </div>
+
+        <div class="footer-socials">
+          <a href="https://github.com/Zaraofxl" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/deepan1205" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:deepanrao@aecsalem.edu.in" class="social-circle" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          <a href="assets/Deepan_A_Resume.pdf" download="Deepan_A_Resume.pdf" class="social-circle" aria-label="Resume"><i class="fas fa-file-pdf"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Deepan A. All rights reserved. Built with precision and modern web architecture.</div>
+        <div>Hosted on Apache (XAMPP) &bull; Chennai, Tamil Nadu</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>

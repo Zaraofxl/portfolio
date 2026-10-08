@@ -1,0 +1,11 @@
+# Dependency and OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment and editor configs
+.vscode/
+.idea/
+
+# Local data files
+data/messages.json
