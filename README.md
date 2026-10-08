@@ -17,7 +17,8 @@
 - **Interactive Particle Network**: HTML5 Canvas particle constellation reacting to mouse movements.
 - **Glassmorphic UI & Dark Theme**: Modern Obsidian & Electric Cyan palette with ambient cursor glow.
 - **Featured Projects**:
-  - **Pulse Polling**: Real-time polling platform with Go (Gin), React, Redis, and MongoDB (Live on Render).
+  - **Pulse Polling**: Real-time polling platform with Go (Gin), React, Redis, and MongoDB ([Live Demo](https://pulsepoll-zara-frontend.onrender.com)).
+  - **Academia–Industry Collaboration Portal**: Full-stack ecosystem with AI Career Coach Nova, roadmaps & milestones ([Live Demo](https://academiatoindustry.onrender.com/)).
   - **Employee Leave Management System**: Angular, Python REST API, MySQL, and Role-Based Access Control (RBAC).
   - **Self-Healing Network Using AI**: NCACI-26 Best Paper Award winning research platform.
 - **Full-Stack Contact Engine**: Integrated PHP endpoint (`api/contact.php`) with validation and instant feedback.

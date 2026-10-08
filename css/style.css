@@ -1041,6 +1041,10 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(135deg, #1b2838, #0a332a, #192038);
 }
 
+.project-4-banner {
+  background: linear-gradient(135deg, #1e1b4b, #0c4a6e, #1e293b);
+}
+
 .banner-overlay-pattern {
   position: absolute;
   top: 0;

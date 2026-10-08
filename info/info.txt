@@ -1,5 +1,5 @@
 linkedin :https://www.linkedin.com/in/deepan1205
 github   :https://github.com/Zaraofxl
-portfolio : 
+portfolio : https://zaraofxl.github.io/portfolio/
 mail: deepanrao@aecsalem.edu.in
 ph : 6369297998

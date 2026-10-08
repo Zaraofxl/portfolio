@@ -234,11 +234,16 @@ Proven track record designing and shipping real-time CRUD-driven applications en
    Live: https://pulsepoll-zara-frontend.onrender.com
    Feature: Real-time vote updates without page reloads via Redis & Go concurrency.
 
-2. <span style="color:#a5b4fc">Employee Leave Management System</span>
+2. <span style="color:#38bdf8">Academia–Industry Collaboration Portal</span>
+   Stack: React, Vite, AI Career Coaching, Roadmaps
+   Live: https://academiatoindustry.onrender.com/
+   Feature: Bridges students, universities & corporate partners with AI Coach Nova.
+
+3. <span style="color:#a5b4fc">Employee Leave Management System</span>
    Stack: Angular, Python, MySQL, REST API
    Feature: Role-based access control, leave audit logs & manager approvals.
 
-3. <span style="color:#f59e0b">Self-Healing Network Using AI</span>
+4. <span style="color:#f59e0b">Self-Healing Network Using AI</span>
    Category: Research & Best Paper Award at NCACI-26
    Feature: Autonomous anomaly detection and self-recovery algorithm.`,
 
@@ -392,8 +397,45 @@ function initProjectModals() {
           <a href="https://pulsepoll-zara-frontend.onrender.com" target="_blank" class="btn btn-primary btn-sm">
             <i class="fas fa-external-link-alt"></i> Visit Live Demo
           </a>
-          <a href="https://github.com/Zaraofxl" target="_blank" class="btn btn-secondary btn-sm">
+          <a href="https://github.com/Zaraofxl/pulsepolling" target="_blank" class="btn btn-secondary btn-sm">
             <i class="fab fa-github"></i> GitHub Source
+          </a>
+        </div>
+      `
+    },
+    'academia-industry': {
+      title: 'Academia–Industry Collaboration Portal',
+      content: `
+        <div style="margin-bottom:1.5rem">
+          <span class="tech-tag" style="background:rgba(6,182,212,0.15);color:#06b6d4">Production Live</span>
+          <span class="tech-tag">React</span>
+          <span class="tech-tag">Vite</span>
+          <span class="tech-tag">AI Career Coach (Nova)</span>
+          <span class="tech-tag">Interactive Milestones</span>
+          <span class="tech-tag">Render</span>
+        </div>
+        <h4 style="color:#f1f5f9;margin-bottom:0.75rem;">System Overview</h4>
+        <p style="color:#94a3b8;line-height:1.7;margin-bottom:1.25rem;">
+          The Academia–Industry Collaboration Portal is an interactive web platform engineered to bridge the gap between academic institutions, students, and corporate partners. It provides students with a tailored career roadmap, real-world portfolio tasks, and automated progress milestones.
+        </p>
+
+        <h4 style="color:#f1f5f9;margin-bottom:0.75rem;">Key Engineering Features</h4>
+        <ul style="color:#cbd5e1;line-height:1.8;padding-left:1.25rem;margin-bottom:1.5rem;">
+          <li><strong>AI Career Coach (&quot;Coach Nova&quot;):</strong> Interactive virtual mentor guiding students through custom career roadmaps, skill validation, and milestone completions.</li>
+          <li><strong>Interactive Milestone Engine:</strong> Radar progress visualization, real-time percentage indicators, and task-driven development workflows.</li>
+          <li><strong>Multi-Stakeholder Collaboration:</strong> Portals for Students, Academic Faculty, and Industry Partners for internships, joint research, and job roles.</li>
+          <li><strong>Cloud Deployment:</strong> High-performance production deployment hosted on Render cloud infrastructure.</li>
+        </ul>
+
+        <div style="background:#0b0f19;border:1px solid rgba(255,255,255,0.08);border-radius:10px;padding:1.25rem;margin-bottom:1.5rem;font-family:var(--font-mono);font-size:0.85rem;color:#38bdf8;">
+          [Students &amp; Faculty] ──► [React SPA (Vite)]<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├──► [AI Coach Nova Roadmap Engine]<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└──► [Live Render Deployment]
+        </div>
+
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="https://academiatoindustry.onrender.com/" target="_blank" class="btn btn-primary btn-sm">
+            <i class="fas fa-external-link-alt"></i> Visit Live Portal
           </a>
         </div>
       `
@@ -422,7 +464,7 @@ function initProjectModals() {
         </ul>
 
         <div style="display:flex;gap:1rem;flex-wrap:wrap;">
-          <a href="https://github.com/Zaraofxl" target="_blank" class="btn btn-primary btn-sm">
+          <a href="https://github.com/Zaraofxl/Employee-leave-management-system" target="_blank" class="btn btn-primary btn-sm">
             <i class="fab fa-github"></i> View on GitHub
           </a>
         </div>
